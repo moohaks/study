@@ -5,7 +5,7 @@ import streamlit as st
 
 # 웹페이지 제목 설정
 st.title('< 마법공식 >')
-st.header('- 조앨 그린블랫 - ')
+st.header('- 조엘 그린블랫 - ')
 
 # 버튼 생성
 if st.button('실행'):
