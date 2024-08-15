@@ -4,8 +4,8 @@ import pandas as pd
 import streamlit as st
 
 # 웹페이지 제목 설정
-st.title('조엘 그린블라트')
-st.title('마법공식')
+st.title('마법공식 - 조엘 그린블랫')
+st.title('')
 
 # 버튼 생성
 if st.button('실행'):
