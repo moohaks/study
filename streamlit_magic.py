@@ -64,10 +64,10 @@ if st.button('실행'):
     selected_columns['ROE 순위'] = selected_columns['ROE'].rank(method='min', ascending=False)
 
     # 'PER 순위'와 'ROE 순위'의 값을 더해서 'MAGIC SUM' 컬럼에 넣기
-    selected_columns['MAGIC'] = selected_columns['PER 순위'] + selected_columns['ROE 순위']
+    selected_columns['MAGIC SUM'] = selected_columns['PER 순위'] + selected_columns['ROE 순위']
 
     # 'MAGIC SUM' 오름차순으로 순위 부여
-    selected_columns['결과'] = selected_columns['MAGIC'].rank(method='min', ascending=True)
+    selected_columns['MAGIC 순위'] = selected_columns['MAGIC SUM'].rank(method='min', ascending=True)
 
     # 'MAGIC 순위' 기준 오름차순으로 정렬
     selected_columns_sorted = selected_columns.sort_values(by='MAGIC 순위', ascending=True)
